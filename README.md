@@ -66,6 +66,7 @@ TODO:
 
 DONE:
 
+`Added Alerts People Joining or Leaving Discord`
 `Added YouTube alerts`
 `Added Twitch alerts`
 `Added donation alerts`
