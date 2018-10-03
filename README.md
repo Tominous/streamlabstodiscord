@@ -3,7 +3,7 @@ StreamLabs Alerts to Discord, good tool created by ChisdealHD
 
 This Discord BOT can pull out your StreamLABS Alerts and pushes out to Discord Channel for all Example
 
-![](https://github.com/ChisdealHD/streamlabstodiscord/blob/master/nFPyvpf.jpg?raw=true)
+![](https://github.com/ChisdealHD/streamlabstodiscord/blob/master/screenshot/nFPyvpf.jpg?raw=true)
 
 Feel free edit bit of Code like Text and more, Just Remider is This code Coded in NodeJS and All Licensed to ChisdealHD.
 ----------------------------------------------------------------------------
@@ -24,7 +24,7 @@ You can name anything you want be called as Stream Alerts
 
 3. get your Bot Token by HERE: 
 
-![](https://github.com/ChisdealHD/streamlabstodiscord/blob/master/tqqwetbdsf.jpg?raw=true)
+![](https://github.com/ChisdealHD/streamlabstodiscord/blob/master/screenshot/tqqwetbdsf.jpg?raw=true)
 
 4. Paste Bot Token in Config name as `"token": "Token here",`
 
@@ -32,7 +32,7 @@ You can name anything you want be called as Stream Alerts
 
 To get ID can be found HERE:
 
-![](https://github.com/ChisdealHD/streamlabstodiscord/blob/master/wyfdjdjrtyjrt.jpg?raw=true)
+![](https://github.com/ChisdealHD/streamlabstodiscord/blob/master/screenshot/wyfdjdjrtyjrt.jpg?raw=true)
 
 6. Go to your Discord then `User Settings->Appearance->Developer Mode make sure thats on`
 
