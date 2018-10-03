@@ -6,7 +6,7 @@ const chalk = require('chalk');
 //start discord
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = config.discord.token;
+const token = config.token;
 
 client.on('ready', () => {
 
@@ -16,6 +16,32 @@ ${chalk.grey('--------------------------------------------------')}
 ${chalk.blue('Discord ') + chalk.green(' Loaded, Loading StreamLABS ') + chalk.blue('API')}
 ${chalk.grey('--------------------------------------------------')}
 `);
+	
+	client.on('guildMemberAdd', member => {
+        const welcomechannel = client.channels.get(config.joinleavechannel)
+
+        var newuserjoinembed = new Discord.RichEmbed()
+          .setColor('00FF00')
+    			.setThumbnail("https://media.giphy.com/media/gydFXgGttOef6/giphy.gif")
+          .setAuthor(member.user.tag + ' has joined server', member.user.displayAvatarURL)
+          .addField(`:inbox_tray: Welcome To The Server ${member.user.tag}`)
+          .setFooter(`User joined`)
+          .setTimestamp()
+          return welcomechannel.send(newuserjoinembed);
+    });
+
+    client.on('guildMemberRemove', member => {
+        const goodbyechannel = client.channels.get(config.joinleavechannel)
+
+        var newuserjoinembed = new Discord.RichEmbed()
+          .setColor('#FF0000')
+    			.setThumbnail("https://thumbs.gfycat.com/BoldMealyCooter-small.gif")
+          .setAuthor(member.user.tag + ' has left server', member.user.displayAvatarURL)
+          .addField(`:outbox_tray: Goodbye ${member.user.tag} :disappointed_relieved: `)
+          .setFooter(`User left`)
+          .setTimestamp()
+          return goodbyechannel.send(newuserjoinembed);
+    });
 
 	//Connection
 	let io = require('socket.io-client');
