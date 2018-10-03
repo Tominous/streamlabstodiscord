@@ -46,7 +46,7 @@ ${chalk.grey('--------------------------------------------------')}
 	//Connection
 	let io = require('socket.io-client');
         let streamlabs = io(`https://sockets.streamlabs.com?token=${config.streamlabs}`);
-        let channel = dclient.channels.get(config.textchannel);
+        let channel = client.channels.get(config.textchannel);
         if (!channel) return;
 
 
