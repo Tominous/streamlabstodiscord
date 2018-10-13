@@ -5,7 +5,7 @@
   "main": "bot.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChisdealHD/streamlabstodiscord/my_package.git"
+    "url": "https://github.com/ChisdealHD/streamlabstodiscord.git"
   },
   "keywords": [],
   "author": "ChisdealHD",
