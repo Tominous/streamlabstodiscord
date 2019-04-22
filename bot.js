@@ -112,7 +112,7 @@ ${chalk.grey('--------------------------------------------------')}
                 channel.send(embed)
 
             } else if (!data.for || data.for === 'twitch_account' && data.type === 'host') {
-                //console.log(data)
+                console.log(data)
                 console.log("You just got Host on Twitch");
                 if (!data === undefined || !data) return;
 
@@ -134,7 +134,7 @@ ${chalk.grey('--------------------------------------------------')}
             if (!data.for || data.for === 'youtube_account' && data.type === 'superchat') {
 
                 if (!data === undefined || !data) return;
-                //console.log(data);
+                console.log(data);
                 console.log("You just got SuperChat on YouTube");
                 let message = `Thank you, **${data.message[0].name}** for **${data.message[0].displayString}** Superchat on Youtube\n\n\`${data.message[0].comment}\``;
                 if (!message) message = `Thank you, **${data.message[0].name}** for **${data.message[0].displayString}** Superchat on Youtube`;
@@ -149,7 +149,7 @@ ${chalk.grey('--------------------------------------------------')}
 
             } else if (!data.for || data.for === 'youtube_account' && data.type === 'follow') {
                 if (!data === undefined || !data) return;
-                //console.log(data);
+                console.log(data);
                 console.log("You just got Sbscribe on YouTube");
                 let message = `Thank you, **${data.message[0].name}** for Subscribe on Youtube`;
                 if (!message) message = `Thank you, **${data.message[0].name}** for Subscribe on Youtube`;
@@ -164,7 +164,7 @@ ${chalk.grey('--------------------------------------------------')}
 
             } else if (!data.for || data.for === 'youtube_account' && data.type === 'subscription') {
                 if (!data === undefined || !data) return;
-                //console.log(data);
+                console.log(data);
                 console.log("You just got Sponsor on YouTube");
                 let message = `Thank you, **${data.message[0].name}** for **${data.message[0].months}** Month Sponsor on Youtube\n\n\`${data.message[0].message}\``;
                 if (!message) message = `Thank you, **${data.message[0].name}** for **${data.message[0].months}** Month Sponsor on Youtube`;
